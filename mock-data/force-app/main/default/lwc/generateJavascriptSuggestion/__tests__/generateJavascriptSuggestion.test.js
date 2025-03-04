@@ -1,4 +1,3 @@
-import { createElement } from 'lwc';
 import GenerateJavascriptSuggestion from 'c/generateJavascriptSuggestion';
 
 describe('c-generate-javascript-suggestion', () => {

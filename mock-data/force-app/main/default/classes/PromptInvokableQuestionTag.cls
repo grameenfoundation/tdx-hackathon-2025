@@ -10,7 +10,9 @@ public class PromptInvokableQuestionTag {
         System.debug('Question ID: ' + q);
         List<Response> responses = new List<Response>();
         Response res = new Response();
-        res.Prompt = QuestionTagHelper.getValidQuestionTagsFromIDAndJoin(q);
+        String validQuestionTags =  QuestionTagHelper.getValidQuestionTagsFromIDAndJoin(q);
+        System.debug(validQuestionTags);
+        res.Prompt = validQuestionTags;
         System.debug(res.Prompt);
         responses.add(res);
         return responses;
