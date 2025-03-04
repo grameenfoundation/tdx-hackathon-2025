@@ -5,12 +5,13 @@ public class PromptInvokableQuestionTag {
         // Validate the expected number of requests as an input
         if (requests.size() != 1)
           throw new ListException('The requests list must contain one entry only');
-        Question__c q = requests[0].desiredQuestion;
-        
-       
+        System.debug('Request: ' + requests);
+        Id q = requests[0].desiredQuestion.Id;
+        System.debug('Question ID: ' + q);
         List<Response> responses = new List<Response>();
         Response res = new Response();
-        res.Prompt = QuestionTagHelper.getValidQuestionTagsFromIDAndJoin(q.Id);
+        res.Prompt = QuestionTagHelper.getValidQuestionTagsFromIDAndJoin(q);
+        System.debug(res.Prompt);
         responses.add(res);
         return responses;
     }

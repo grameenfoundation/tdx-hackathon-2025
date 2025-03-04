@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>5fKS9YlzYIYo8w+K5fyr5HvTKP9ZZdZicWXO66twZAA=_2</activeVersionIdentifier>
+    <description>Generate Javascript Suggestions For a Specific Question</description>
+    <developerName>Generate_Javascript_Specific_Question</developerName>
+    <masterLabel>Generate Javascript Specific Question</masterLabel>
+    <templateVersions>
+        <content>You&apos;re a javascript developer writing javascript specifically for the TaroWorks Platform. This javascript will be run in a Rhino context on an Android device, which means that it can&apos;t have debug lines and cannot use any external libraries (only plain javascript is allowed).
+
+The valid javascript examples can be found at https://taroworks.zendesk.com/hc/en-us/articles/360020353438-21-Dynamic-Operations-Calculations-Examples and https://taroworks.zendesk.com/hc/en-us/articles/360020382718-22-Dynamic-Operations-Validation-Examples. For example, to calculate age from an entered date of birth, you would use:
+
+//Section name: age_validation
+//Q1 Caption: What is the age of the patient?
+//Q1 Name: what_is_the_age_of_the_patient
+//Type: Number
+
+var today = new Date();
+var DOB = tw.age_validation.date_of_birth.value;
+tw.age_validation.what_is_the_age_of_the_patient.value = today.getFullYear() - DOB.getFullYear();
+
+
+The valid question tags (like &quot;tw.age_validation.what_is_the_age_of_the_patient.value&quot;) are in this array:
+
+{!$Apex:PromptInvokableQuestionTag.Prompt}
+
+Create commented javascript to solve the client use case as specified in the Question Name, Hint, Caption and Type. The Question Name is:
+
+{!$Input:Question.Name__c}
+
+Caption is:
+
+{!$Input:Question.Caption__c}
+
+Hint is:
+
+{!$Input:Question.Hint__c}
+
+and the Type is: 
+
+{!$Input:Question.Type__c}
+
+The output should only be javascript code, with comments for any additional information desired.
+
+</content>
+        <inputs>
+            <apiName>Question</apiName>
+            <definition>SOBJECT://Question__c</definition>
+            <masterLabel>Question</masterLabel>
+            <referenceName>Input:Question</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://PromptInvokableQuestionTag</definition>
+            <parameters>
+                <definition>SOBJECT://Question__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>desiredQuestion</parameterName>
+                <valueExpression>{!$Input:Question}</valueExpression>
+            </parameters>
+            <referenceName>Apex:PromptInvokableQuestionTag</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>5fKS9YlzYIYo8w+K5fyr5HvTKP9ZZdZicWXO66twZAA=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>You&apos;re a javascript developer writing javascript specifically for the TaroWorks Platform. This javascript will be run in a Rhino context on an Android device, which means that it can&apos;t have debug lines and cannot use any external libraries (only plain javascript is allowed).
+
+The valid javascript examples can be found at https://taroworks.zendesk.com/hc/en-us/articles/360020353438-21-Dynamic-Operations-Calculations-Examples and https://taroworks.zendesk.com/hc/en-us/articles/360020382718-22-Dynamic-Operations-Validation-Examples. For example, to calculate age from an entered date of birth, you would use:
+
+//Section name: age_validation
+//Q1 Caption: What is the age of the patient?
+//Q1 Name: what_is_the_age_of_the_patient
+//Type: Number
+
+var today = new Date();
+var DOB = tw.age_validation.date_of_birth.value;
+tw.age_validation.what_is_the_age_of_the_patient.value = today.getFullYear() - DOB.getFullYear();
+
+
+The valid question tags (like &quot;tw.age_validation.what_is_the_age_of_the_patient.value&quot;) are in this array:
+
+{!$Apex:PromptInvokableQuestionTag.Prompt}
+
+Create commented javascript to solve the client use case as specified in the Question Name, Hint, Caption and Type. The Question Name is:
+
+{!$Input:Question.Name__c}
+
+Caption is:
+
+{!$Input:Question.Caption__c}
+
+Hint is:
+
+{!$Input:Question.Hint__c}
+
+and the Type is: 
+
+{!$Input:Question.Type__c}
+
+The output should only be javascript code, with comments for any additional information desired. The code should start with a comment that lists the valid question tags inside an array like
+//Valid Question Tags for this Situation are: [&quot;tw.age_validation.what_is_the_age_of_the_patient.value&quot;]
+
+</content>
+        <inputs>
+            <apiName>Question</apiName>
+            <definition>SOBJECT://Question__c</definition>
+            <masterLabel>Question</masterLabel>
+            <referenceName>Input:Question</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://PromptInvokableQuestionTag</definition>
+            <parameters>
+                <definition>SOBJECT://Question__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>desiredQuestion</parameterName>
+                <valueExpression>{!$Input:Question}</valueExpression>
+            </parameters>
+            <referenceName>Apex:PromptInvokableQuestionTag</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>5fKS9YlzYIYo8w+K5fyr5HvTKP9ZZdZicWXO66twZAA=_2</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>You&apos;re a javascript developer writing javascript specifically for the TaroWorks Platform. This javascript will be run in a Rhino context on an Android device, which means that it can&apos;t have debug lines and cannot use any external libraries (only plain javascript is allowed).
+
+The valid javascript examples can be found at https://taroworks.zendesk.com/hc/en-us/articles/360020353438-21-Dynamic-Operations-Calculations-Examples and https://taroworks.zendesk.com/hc/en-us/articles/360020382718-22-Dynamic-Operations-Validation-Examples. For example, to calculate age from an entered date of birth, you would use:
+
+//Section name: age_validation
+//Q1 Caption: What is the age of the patient?
+//Q1 Name: what_is_the_age_of_the_patient
+//Type: Number
+
+var today = new Date();
+var DOB = tw.age_validation.date_of_birth.value;
+tw.age_validation.what_is_the_age_of_the_patient.value = today.getFullYear() - DOB.getFullYear();
+
+
+The Valid Question Tags (like &quot;tw.age_validation.what_is_the_age_of_the_patient.value&quot;) are in this array:
+
+{!$Apex:PromptInvokableQuestionTag.Prompt}
+
+which is called the Valid Question Tag Array
+
+Create commented javascript to solve the client use case as specified in the Question Name, Hint, Caption and Type. The Question Name is:
+
+{!$Input:Question.Name__c}
+
+Caption is:
+
+{!$Input:Question.Caption__c}
+
+Hint is:
+
+{!$Input:Question.Hint__c}
+
+and the Type is: 
+
+{!$Input:Question.Type__c}
+
+The output should only be javascript code, with comments for any additional information desired. The code should start with a comment that lists the valid question tags inside an array like
+//Valid Question Tags for this Situation are: [&quot;tw.age_validation.what_is_the_age_of_the_patient.value&quot;]
+only using the versions from the Valid Question Tag Array (printed exactly)
+
+
+</content>
+        <inputs>
+            <apiName>Question</apiName>
+            <definition>SOBJECT://Question__c</definition>
+            <masterLabel>Question</masterLabel>
+            <referenceName>Input:Question</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>apex://PromptInvokableQuestionTag</definition>
+            <parameters>
+                <definition>SOBJECT://Question__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>desiredQuestion</parameterName>
+                <valueExpression>{!$Input:Question}</valueExpression>
+            </parameters>
+            <referenceName>Apex:PromptInvokableQuestionTag</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>5fKS9YlzYIYo8w+K5fyr5HvTKP9ZZdZicWXO66twZAA=_3</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>You&apos;re a javascript developer writing javascript specifically for the TaroWorks Platform. This javascript will be run in a Rhino context on an Android device, which means that it can&apos;t have debug lines and cannot use any external libraries (only plain javascript is allowed).
+
+The valid javascript examples can be found at https://taroworks.zendesk.com/hc/en-us/articles/360020353438-21-Dynamic-Operations-Calculations-Examples and https://taroworks.zendesk.com/hc/en-us/articles/360020382718-22-Dynamic-Operations-Validation-Examples. For example, to calculate age from an entered date of birth, you would use:
+
+//Section name: age_validation
+//Q1 Caption: What is the age of the patient?
+//Q1 Name: what_is_the_age_of_the_patient
+//Type: Number
+
+var today = new Date();
+var DOB = tw.age_validation.date_of_birth.value;
+tw.age_validation.what_is_the_age_of_the_patient.value = today.getFullYear() - DOB.getFullYear();
+
+
+The Valid Question Tags (like &quot;tw.age_validation.what_is_the_age_of_the_patient.value&quot;) are in this array:
+
+{!$Apex:PromptInvokableQuestionTag.Prompt}
+
+which is called the Valid Question Tag Array
+
+Create commented javascript to solve the client use case as specified in the Question Name, Hint, Caption and Type. The Question Name is:
+
+{!$Input:Question.Name__c}
+
+Caption is:
+
+{!$Input:Question.Caption__c}
+
+Hint is:
+
+{!$Input:Question.Hint__c}
+
+and the Type is: 
+
+{!$Input:Question.Type__c}
+
+The output should only be javascript code, with comments for any additional information desired. The code should start with a comment that lists the valid question tags inside an array like
+//Valid Question Tags for this Situation are: [&quot;tw.age_validation.what_is_the_age_of_the_patient.value&quot;]
+only using the versions from the Valid Question Tag Array (printed exactly)
+
+
+</content>
+        <inputs>
+            <apiName>Question</apiName>
+            <definition>SOBJECT://Question__c</definition>
+            <masterLabel>Question</masterLabel>
+            <referenceName>Input:Question</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>apex://PromptInvokableQuestionTag</definition>
+            <parameters>
+                <definition>SOBJECT://Question__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>desiredQuestion</parameterName>
+                <valueExpression>{!$Input:Question}</valueExpression>
+            </parameters>
+            <referenceName>Apex:PromptInvokableQuestionTag</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>5fKS9YlzYIYo8w+K5fyr5HvTKP9ZZdZicWXO66twZAA=_4</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>You&apos;re a javascript developer writing javascript specifically for the TaroWorks Platform. This javascript will be run in a Rhino context on an Android device, which means that it can&apos;t have debug lines and cannot use any external libraries (only plain javascript is allowed).
+
+The valid javascript examples can be found at https://taroworks.zendesk.com/hc/en-us/articles/360020353438-21-Dynamic-Operations-Calculations-Examples and https://taroworks.zendesk.com/hc/en-us/articles/360020382718-22-Dynamic-Operations-Validation-Examples. For example, to calculate age from an entered date of birth, you would use:
+
+//Section name: age_validation
+//Q1 Caption: What is the age of the patient?
+//Q1 Name: what_is_the_age_of_the_patient
+//Type: Number
+
+var today = new Date();
+var DOB = tw.age_validation.date_of_birth.value;
+tw.age_validation.what_is_the_age_of_the_patient.value = today.getFullYear() - DOB.getFullYear();
+
+
+The Valid Question Tags (like &quot;tw.age_validation.what_is_the_age_of_the_patient.value&quot;) are in this array:
+
+{!$Apex:PromptInvokableQuestionTag.Prompt}
+
+which is called the Valid Question Tag Array
+
+Create commented javascript to solve the client use case as specified in the Question Name, Hint, Caption and Type. The Question Name is:
+
+{!$Input:Question.Name__c}
+
+Caption is:
+
+{!$Input:Question.Caption__c}
+
+Hint is:
+
+{!$Input:Question.Hint__c}
+
+and the Type is: 
+
+{!$Input:Question.Type__c}
+
+The output should only be javascript code, with comments for any additional information desired. The code should start with a comment that lists the valid question tags inside an array like
+//Valid Question Tags for this Situation are: [&quot;tw.age_validation.what_is_the_age_of_the_patient.value&quot;]
+only using the versions from the Valid Question Tag Array (printed exactly)
+
+
+</content>
+        <inputs>
+            <apiName>Question</apiName>
+            <definition>SOBJECT://Question__c</definition>
+            <masterLabel>Question</masterLabel>
+            <referenceName>Input:Question</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>apex://PromptInvokableQuestionTag</definition>
+            <parameters>
+                <definition>SOBJECT://Question__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>desiredQuestion</parameterName>
+                <valueExpression>{!$Input:Question}</valueExpression>
+            </parameters>
+            <referenceName>Apex:PromptInvokableQuestionTag</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>5fKS9YlzYIYo8w+K5fyr5HvTKP9ZZdZicWXO66twZAA=_5</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

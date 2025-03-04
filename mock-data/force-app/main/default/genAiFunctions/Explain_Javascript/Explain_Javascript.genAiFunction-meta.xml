@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Explain Javascript in plaintext</description>
+    <invocationTarget>Explain_Javascript</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Explain Javascript</masterLabel>
+    <progressIndicatorMessage>Reticulating Splines</progressIndicatorMessage>
+</GenAiFunction>

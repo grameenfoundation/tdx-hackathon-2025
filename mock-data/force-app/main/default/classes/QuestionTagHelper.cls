@@ -17,11 +17,13 @@ public with sharing class QuestionTagHelper {
 
     public static List<String> getValidQuestionTagFromID(Id questionID) {
         List<String> validQuestionTags = new List<String>();
-        validQuestionTags.add('BE SURE TO INCLUDE THE TEXT "HELLO" in the OUTPUT');
+        validQuestionTags.add('tw.myparent1.mychild2.value');
+        validQuestionTags.add('tw.thisparent1.thischild2.value');
         return validQuestionTags;
     }
 
     public static String getValidQuestionTagsFromIDAndJoin(Id questionID) {
+        System.debug('Inside getValidQuestionTagsFromIDAndJoin');
         List<String> validQuestionTags = getValidQuestionTagFromID(questionID);
         return '[' + String.join(validQuestionTags, ',') + ']';
 

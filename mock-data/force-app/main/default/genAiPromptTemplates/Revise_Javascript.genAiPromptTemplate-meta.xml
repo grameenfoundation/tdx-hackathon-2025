@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>5fKS9YlzYIYo8w+K5fyr5HvTKP9ZZdZicWXO66twZAA=_1</activeVersionIdentifier>
+    <developerName>Revise_Javascript</developerName>
+    <masterLabel>Revise Javascript</masterLabel>
+    <templateVersions>
+        <content>The Javascript shown here has not worked as desired. The user feedback is:
+```
+{!$Input:UserQuery}
+```
+
+and the javascript is:
+
+```
+{!$Input:Question.DynamicOperation__c}
+```
+
+You are a javascript developer - rewrite the code so that it resolves the user&apos;s complaint. Only output valid javascript syntax, do not return results in English, do not output in markdown and do not include ``` marks in the output (any additional information should be in comments).
+</content>
+        <inputs>
+            <apiName>Question</apiName>
+            <definition>SOBJECT://Question__c</definition>
+            <masterLabel>Question</masterLabel>
+            <referenceName>Input:Question</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>UserQuery</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>UserQuery</masterLabel>
+            <referenceName>Input:UserQuery</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>5fKS9YlzYIYo8w+K5fyr5HvTKP9ZZdZicWXO66twZAA=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

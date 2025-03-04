@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <aiPluginUtterances>
+        <developerName>utterance_helpmewrit0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>utterance_helpmewrit0</masterLabel>
+        <utterance>Help me write javascript</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_iwanttowri1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>utterance_iwanttowri1</masterLabel>
+        <utterance>I want to write javascript</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_whatdoesth2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>utterance_whatdoesth2</masterLabel>
+        <utterance>What does this javascript do?</utterance>
+    </aiPluginUtterances>
+    <canEscalate>false</canEscalate>
+    <description>Write javascript, write dynamic operations, write code or provide help with dynamic operations</description>
+    <developerName>Write_Javascript</developerName>
+    <genAiFunctions>
+        <functionName>QuestionTag_Helper</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Explain_Javascript</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Generate_Javascript_Specific_Question</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Always output valid javascript syntax, with explanation in javascript code</description>
+        <developerName>instruction_alwaysoutp0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_alwaysoutp0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Don&apos;t include javascript debug statements</description>
+        <developerName>instruction_dontinclud1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_dontinclud1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Write Javascript</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to write javascript code and provide context on what the code does</scope>
+</GenAiPlugin>

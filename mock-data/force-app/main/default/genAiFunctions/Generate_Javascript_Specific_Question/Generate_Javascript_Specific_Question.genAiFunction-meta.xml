@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Generate Javascript Suggestions For a Specific Question</description>
+    <invocationTarget>Generate_Javascript_Specific_Question</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Generate Javascript Specific Question</masterLabel>
+    <progressIndicatorMessage>Generating Javascript</progressIndicatorMessage>
+</GenAiFunction>

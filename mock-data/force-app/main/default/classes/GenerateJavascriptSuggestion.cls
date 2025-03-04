@@ -10,11 +10,11 @@ public with sharing class GenerateJavascriptSuggestion {
         inputParams.put('Input:Question', questionIDValue);
 
         //TODO get from QuestionTagHelper
-        List<String> validQuestionTags = new List<String>();
-        String allCombinedTags =  QuestionTagHelper.getValidQuestionTagsFromIDAndJoin(questionID);
-        ConnectApi.WrappedValue allCombinedTagsValue = new ConnectApi.WrappedValue();
-        allCombinedTagsValue.value = allCombinedTags;   
-        inputParams.put('Input:QuestionTags', allCombinedTagsValue);
+        // List<String> validQuestionTags = new List<String>();
+        // String allCombinedTags =  QuestionTagHelper.getValidQuestionTagsFromIDAndJoin(questionID);
+        // ConnectApi.WrappedValue allCombinedTagsValue = new ConnectApi.WrappedValue();
+        // allCombinedTagsValue.value = allCombinedTags;   
+        // inputParams.put('Input:QuestionTags', allCombinedTagsValue);
 
         // Configure invocation parameters
         ConnectApi.EinsteinPromptTemplateGenerationsInput executeTemplateInput = new ConnectApi.EinsteinPromptTemplateGenerationsInput();
@@ -26,7 +26,7 @@ public with sharing class GenerateJavascriptSuggestion {
         try {
             // Call the service
             ConnectApi.EinsteinPromptTemplateGenerationsRepresentation generationsOutput = ConnectApi.EinsteinLLM.generateMessagesForPromptTemplate(
-                'Generate_Javascript',
+                'Generate_Javascript_Specific_Question',
                 executeTemplateInput
             );
             ConnectApi.EinsteinLLMGenerationItemOutput response = generationsOutput.generations[0];

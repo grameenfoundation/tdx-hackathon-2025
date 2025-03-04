@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Question Tags</description>
+    <invocationTarget>QuestionTagHelper</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>QuestionTag Helper</masterLabel>
+    <progressIndicatorMessage>Fetching related questions</progressIndicatorMessage>
+</GenAiFunction>
