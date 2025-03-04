@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>A form question created in the form builder.</description>
+    <enableActivities>false</enableActivities>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <fields>
+        <fullName>Caption__c</fullName>
+        <description>The caption of the question displayed to Mobile Users.</description>
+        <inlineHelpText>The caption of the question displayed to Mobile Users.</inlineHelpText>
+        <externalId>false</externalId>
+        <label>Caption</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DynamicOperationType__c</fullName>
+        <description>Type of Javascript user will enter</description>
+        <inlineHelpText>Type of Javascript user will enter</inlineHelpText>
+        <externalId>false</externalId>
+        <label>Dynamic Operation Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Calculation</fullName>
+                    <default>false</default>
+                    <label>Calculation</label>
+                </value>
+                <value>
+                    <fullName>Validation</fullName>
+                    <default>false</default>
+                    <label>Validation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DynamicOperation__c</fullName>
+        <description>Javascript to be added for Validation or Calculation</description>
+        <inlineHelpText>Javascript to be added for Validation or Calculation</inlineHelpText>
+        <externalId>false</externalId>
+        <label>Dynamic Operation</label>
+        <length>50000</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Hidden__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Mark the question to be hidden on mobile device</description>
+        <inlineHelpText>Mark the question to be hidden on mobile device</inlineHelpText>
+        <externalId>false</externalId>
+        <label>Hidden</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Hint__c</fullName>
+        <description>A hint for the question</description>
+        <inlineHelpText>A hint for the question</inlineHelpText>
+        <externalId>false</externalId>
+        <label>Supporting text / Instructions</label>
+        <length>2000</length>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Parent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Sections (regular and repeat) are parent questions. If a question has a parent, then it sits inside that section; if a question has no parent, then that question is a section.</description>
+        <inlineHelpText>Sections (regular and repeat) are parent questions. If a question has a parent, then it sits inside that section; if a question has no parent, then that question is a section.</inlineHelpText>
+        <externalId>false</externalId>
+        <label>Parent</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 AND ((2 OR 3) OR (4 AND 5))</booleanFilter>
+            <errorMessage>Parent must be a section or repeat, or cascading select if is cascading level and belong to the same form.</errorMessage>
+            <filterItems>
+                <field>Question__c.SurveyVersion__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.SurveyVersion__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>Question__c.Type__c</field>
+                <operation>equals</operation>
+                <value>section</value>
+            </filterItems>
+            <filterItems>
+                <field>Question__c.Type__c</field>
+                <operation>equals</operation>
+                <value>repeat</value>
+            </filterItems>
+            <filterItems>
+                <field>$Source.Type__c</field>
+                <operation>equals</operation>
+                <value>cascading-level</value>
+            </filterItems>
+            <filterItems>
+                <field>Question__c.Type__c</field>
+                <operation>equals</operation>
+                <value>cascading-select</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Question__c</referenceTo>
+        <relationshipLabel>Questions</relationshipLabel>
+        <relationshipName>Questions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Position__c</fullName>
+        <externalId>false</externalId>
+        <description>Position of a question inside a section, or position of a section relative to the other sections.</description>
+        <inlineHelpText>Position of a question inside a section, or position of a section relative to the other sections.</inlineHelpText>
+        <label>Position</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dynamic_Operation_Test_Data__c</fullName>
+        <description>Holds the JSON format of the test data for all questions added in dynamic operation.</description>
+        <inlineHelpText>Holds the JSON format of the test data for all questions added in dynamic operation.</inlineHelpText>
+        <required>false</required>
+        <label>Dynamic Operation Test Data</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+	<fields>
+        <fullName>Test_Dynamic_Operations__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Boolean value to check if user has added test data for dynamic operation on a question.</description>
+        <inlineHelpText>Boolean value to check if user has added test data for dynamic operation on a question.</inlineHelpText>
+        <required>false</required>
+        <label>Test Dynamic Operations</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RepeatSourceValue__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The Source Question to determine the times a repeated question must be repeated</description>
+        <inlineHelpText>The Source Question to determine the times a repeated question must be repeated</inlineHelpText>
+        <externalId>false</externalId>
+        <label>Repeat Source Value</label>
+        <referenceTo>Question__c</referenceTo>
+        <relationshipLabel>Source Question</relationshipLabel>
+        <relationshipName>SourceQuestion</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check if this question must be answered before moving to the next question</description>
+        <inlineHelpText>Check if this question must be answered before moving to the next question</inlineHelpText>
+        <externalId>false</externalId>
+        <label>Required</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SurveyVersion__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Form Version parent that this question is part of. Questions have a parent of Form Versions, which have a parent of Forms.</description>
+        <inlineHelpText>Form Version parent that this question is part of. Questions have a parent of Form Versions, which have a parent of Forms.</inlineHelpText>
+        <externalId>false</externalId>
+        <label>Form Version</label>
+        <referenceTo>SurveyVersion__c</referenceTo>
+        <relationshipLabel>Questions</relationshipLabel>
+        <relationshipName>Questions</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <description>The type of the question. Allowed values are: section, text-short, text-long, number, number-integer, number-decimal, date-date, date-datetime, barcode, radio, checkbox, static-content, end_of_survey, picture, video, audio, file, signature, cascading-level, gps-location, gps-geoshape</description>
+        <inlineHelpText>The type of the question. Allowed values are: section, text-short, text-long, number, number-integer, number-decimal, date-date, date-datetime, barcode, radio, checkbox, static-content, end_of_survey, picture, video, audio, file, signature, cascading-level, gps-location, gps-geoshape</inlineHelpText>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>section</fullName>
+                    <default>false</default>
+                    <label>section</label>
+                </value>
+                <value>
+                    <fullName>repeat</fullName>
+                    <default>false</default>
+                    <label>repeat</label>
+                </value>
+                <value>
+                    <fullName>text</fullName>
+                    <default>false</default>
+                    <label>ZZDeprecated-text</label>
+                </value>
+                <value>
+                    <fullName>text-short</fullName>
+                    <default>false</default>
+                    <label>text-short</label>
+                </value>
+                <value>
+                    <fullName>text-long</fullName>
+                    <default>false</default>
+                    <label>text-long</label>
+                </value>
+                <value>
+                    <fullName>number</fullName>
+                    <default>false</default>
+                    <label>number</label>
+                </value>
+                <value>
+                    <fullName>number-integer</fullName>
+                    <default>false</default>
+                    <label>number-integer</label>
+                </value>
+                <value>
+                    <fullName>number-decimal</fullName>
+                    <default>false</default>
+                    <label>number-decimal</label>
+                </value>
+                <value>
+                    <fullName>date</fullName>
+                    <default>false</default>
+                    <label>ZZDeprecated-date</label>
+                </value>
+                <value>
+                    <fullName>date-date</fullName>
+                    <default>false</default>
+                    <label>date-date</label>
+                </value>
+                <value>
+                    <fullName>date-datetime</fullName>
+                    <default>false</default>
+                    <label>date-datetime</label>
+                </value>
+                <value>
+                    <fullName>radio</fullName>
+                    <default>false</default>
+                    <label>radio</label>
+                </value>
+                <value>
+                    <fullName>checkbox</fullName>
+                    <default>false</default>
+                    <label>checkbox</label>
+                </value>
+                <value>
+                    <fullName>static-content</fullName>
+                    <default>false</default>
+                    <label>static-content</label>
+                </value>
+                <value>
+                    <fullName>end_of_survey</fullName>
+                    <default>false</default>
+                    <label>end_of_survey</label>
+                </value>
+                <value>
+                    <fullName>barcode</fullName>
+                    <default>false</default>
+                    <label>barcode</label>
+                </value>
+                <value>
+                    <fullName>gps-location</fullName>
+                    <default>false</default>
+                    <label>gps-location</label>
+                </value>
+                <value>
+                    <fullName>gps-geoshape</fullName>
+                    <default>false</default>
+                    <label>gps-geoshape</label>
+                </value>
+                <value>
+                    <fullName>picture</fullName>
+                    <default>false</default>
+                    <label>picture</label>
+                </value>
+                <value>
+                    <fullName>signature</fullName>
+                    <default>false</default>
+                    <label>signature</label>
+                </value>
+                <value>
+                    <fullName>video</fullName>
+                    <default>false</default>
+                    <label>video</label>
+                </value>
+                <value>
+                    <fullName>audio</fullName>
+                    <default>false</default>
+                    <label>audio</label>
+                </value>
+                <value>
+                    <fullName>file</fullName>
+                    <default>false</default>
+                    <label>file</label>
+                </value>
+                <value>
+                    <fullName>cascading-select</fullName>
+                    <default>false</default>
+                    <label>cascading-select</label>
+                </value>
+                <value>
+                    <fullName>cascading-level</fullName>
+                    <default>false</default>
+                    <label>cascading-level</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Question</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Question Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Questions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+</CustomObject>
