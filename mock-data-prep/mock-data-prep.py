@@ -4,6 +4,9 @@ import os
 
 # Define the fields to keep (hardcoded)
 FIELDS_TO_KEEP = [
+    "FormVersions.Name",
+    "FormVersions.Id",
+    "Questions.Id",
     "Questions.gfsurveys__Caption__c",
     "Questions.gfsurveys__DynamicOperationType__c",
     "Questions.gfsurveys__DynamicOperation__c",

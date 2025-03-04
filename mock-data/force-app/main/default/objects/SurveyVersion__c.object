@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Holds the version details for a particular form. This object&apos;s attachment stores the xform.xml which contains all question related details.</description>
+    <enableActivities>false</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <description>Status of the form version. Should not be modified through the API, instead use the frontend menus for this.</description>
+        <inlineHelpText>Status of the form version. Should not be modified through the API, instead use the frontend menus for this.</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>false</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>Deprecated</fullName>
+                    <default>false</default>
+                    <label>Deprecated</label>
+                </value>
+                <value>
+                    <fullName>Invalid</fullName>
+                    <default>false</default>
+                    <label>Invalid</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+                <value>
+                    <fullName>Published</fullName>
+                    <default>false</default>
+                    <label>Published</label>
+                </value>
+                <value>
+                    <fullName>Updating</fullName>
+                    <default>false</default>
+                    <label>Updating</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Version__c</fullName>
+        <externalId>false</externalId>
+        <description>Numeric version of the formversion (incremented when new form version is created)</description>
+        <inlineHelpText>Numeric version of the formversion (incremented when new form version is created)</inlineHelpText>
+        <label>Version</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Form Version</label>
+    <nameField>
+        <displayFormat>SV-{0000000000}</displayFormat>
+        <label>Form Version Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Form Versions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

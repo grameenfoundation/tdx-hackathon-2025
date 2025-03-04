@@ -1,0 +1,135 @@
+Id,Name,Caption__c,DynamicOperationType__c,DynamicOperation__c,Hidden__c,Hint__c,Parent__c,Position__c,Required__c,SurveyVersion__c,Test_Dynamic_Operations__c,Type__c
+a0R8Y00000qxo15UAA,community_information,Community Information,,,False,,,1,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxo16UAA,proposed_bridge_name,Proposed Bridge Name,,,False,,a0R8Y00000qxo15UAA,1,True,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxo17UAA,stage_1,Stage,,,False,,a0R8Y00000qxo15UAA,2,True,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo18UAA,site_rejected,Flag for Rejection,,,False,,a0R8Y00000qxo15UAA,3,True,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo19UAA,form_record_type,Form Record Type,Calculation,"tw.community_information.form_record_type.value = ""Project Assessment"";",True,,a0R8Y00000qxo15UAA,4,False,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo1AUAQ,community_information_substage,Community Information - Sub-Stage,,,False,,,2,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxo1BUAQ,substage_identified,Sub-Stage (Identified),,,False,,a0R8Y00000qxo1AUAQ,1,False,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo1CUAQ,substage_prospecting,Sub-Stage (Rejected),,,False,,a0R8Y00000qxo1AUAQ,2,False,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo1DUAQ,community_information_1,Community Information 1,,,False,,,3,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxo1EUAQ,region_country_and_government_levels_1_2,"Region, Country, and Government Levels 1 & 2",,,False,,a0R8Y00000qxo1DUAQ,1,True,a0e8Y00000IZYo4QAH,False,cascading-select
+a0R8Y00000qxo1FUAQ,community_information_2,Community Information 2,,,False,,,4,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxo1GUAQ,level_3_government,Level 3 Government,,,False,Bolivia: Municipality; Rwanda: Sector; Uganda: Sub-County,a0R8Y00000qxo1FUAQ,1,False,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxo1HUAQ,level_4_government,Level 4 Government,,,False,,a0R8Y00000qxo1FUAQ,2,False,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxo1IUAQ,community_information_3,Community Information 3,,,False,,,5,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxo1JUAQ,close_date,Anticipated date of completion,Calculation,"var today = new Date(); tw.community_information_3.close_date.value=new Date(today.getFullYear(), 11, 31);",True,,a0R8Y00000qxo1IUAQ,1,True,a0e8Y00000IZYo4QAH,False,date-date
+a0R8Y00000qxo1KUAQ,b2p_fiscal_year,B2P Fiscal Year,,,False,,a0R8Y00000qxo1IUAQ,2,True,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo1LUAQ,technical,Technical,,,False,,,6,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxo1MUAQ,current_crossing_method,Current crossing method,,,False,,a0R8Y00000qxo1LUAQ,1,False,a0e8Y00000IZYo4QAH,False,picture
+a0R8Y00000qxo1NUAQ,bridge_type,Bridge type,,,False,,a0R8Y00000qxo1LUAQ,2,False,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo1OUAQ,bridge_classification,Bridge classification,,,False,,a0R8Y00000qxo1LUAQ,3,False,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo1PUAQ,river_meanderingerosion,River meandering/erosion,,,False,,a0R8Y00000qxo1LUAQ,4,False,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo1QUAQ,width_of_river_at_current_crossing,Estimated span (m),,,False,,a0R8Y00000qxo1LUAQ,5,False,a0e8Y00000IZYo4QAH,False,number-decimal
+a0R8Y00000qxo1RUAQ,freeboard_required,Freeboard required,,,False,,a0R8Y00000qxo1LUAQ,6,False,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo1SUAQ,h_from_ground_at_rhs_tower_to_hwl,H from HWL to ground at LHS tower,,,False,,a0R8Y00000qxo1LUAQ,7,False,a0e8Y00000IZYo4QAH,False,number-decimal
+a0R8Y00000qxo1TUAQ,estimated_backslope_lhs,Avg slope behind centerline of tower LHS (°),,,False,,a0R8Y00000qxo1LUAQ,8,False,a0e8Y00000IZYo4QAH,False,number-decimal
+a0R8Y00000qxo1UUAQ,centerline_lhs,Unobstructed dist behind CL of tower LHS (m),,,False,,a0R8Y00000qxo1LUAQ,9,False,a0e8Y00000IZYo4QAH,False,number-decimal
+a0R8Y00000qxo1VUAQ,left_side_soil_1,Left side soil,,,False,,a0R8Y00000qxo1LUAQ,10,False,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo1WUAQ,left_side_site_description,Left side site description,,,False,,a0R8Y00000qxo1LUAQ,11,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxo1XUAQ,technical_2,Technical 2,,,False,,,7,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxo1YUAQ,h_from_ground_level_at_low_foundation_to,H from HWL to ground at RHS tower,,,False,,a0R8Y00000qxo1XUAQ,1,False,a0e8Y00000IZYo4QAH,False,number-integer
+a0R8Y00000qxo1ZUAQ,centerline_rhs,Unobstructed dist behind CL of tower RHS (m),,,False,,a0R8Y00000qxo1XUAQ,2,False,a0e8Y00000IZYo4QAH,False,number-decimal
+a0R8Y00000qxo1aUAA,estimated_backslope_rhs,Avg slope behind centerline of tower RHS (°),,,False,,a0R8Y00000qxo1XUAQ,3,False,a0e8Y00000IZYo4QAH,False,number-decimal
+a0R8Y00000qxo1bUAA,right_side_soil,Right side soil,,,False,,a0R8Y00000qxo1XUAQ,4,False,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo1cUAA,right_side_site_description,Right side site description,,,False,,a0R8Y00000qxo1XUAQ,5,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxo1dUAA,other_site_obstructions,Other site obstructions,,,False,,a0R8Y00000qxo1XUAQ,6,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxo1eUAA,media,Media,,,False,,,8,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxo1fUAA,right_survey_limit,Right survey limit (toward the river),,,False,,a0R8Y00000qxo1eUAA,1,False,a0e8Y00000IZYo4QAH,False,picture
+a0R8Y00000qxo1jUAA,upstream,Upstream,,,False,,a0R8Y00000qxo1eUAA,5,False,a0e8Y00000IZYo4QAH,False,picture
+a0R8Y00000qxo1gUAA,right_top_of_bank_away,Right tower (away from river),,,False,,a0R8Y00000qxo1eUAA,2,False,a0e8Y00000IZYo4QAH,False,picture
+a0R8Y00000qxo1hUAA,right_top_of_bank_toward,Right tower (toward the river),,,False,,a0R8Y00000qxo1eUAA,3,False,a0e8Y00000IZYo4QAH,False,picture
+a0R8Y00000qxo1iUAA,left_bank,Left bank,,,False,,a0R8Y00000qxo1eUAA,4,False,a0e8Y00000IZYo4QAH,False,picture
+a0R8Y00000qxo1kUAA,downstream,Downstream,,,False,,a0R8Y00000qxo1eUAA,6,False,a0e8Y00000IZYo4QAH,False,picture
+a0R8Y00000qxo1lUAA,rejected_site,Rejected Site,,,False,,,9,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxo1mUAA,right_bank,Right bank,,,False,,a0R8Y00000qxo1eUAA,7,False,a0e8Y00000IZYo4QAH,False,picture
+a0R8Y00000qxo1nUAA,left_top_of_bank_toward,Left tower (toward river),,,False,,a0R8Y00000qxo1eUAA,8,False,a0e8Y00000IZYo4QAH,False,picture
+a0R8Y00000qxo1oUAA,left_top_of_bank_away,Left tower (away from river),,,False,,a0R8Y00000qxo1eUAA,9,False,a0e8Y00000IZYo4QAH,False,picture
+a0R8Y00000qxo1pUAA,left_survey_limit,Left survey limit (toward),,,False,,a0R8Y00000qxo1eUAA,10,False,a0e8Y00000IZYo4QAH,False,picture
+a0R8Y00000qxo1tUAA,additional_image_depicting_rejection_rea,Additional image depicting rejection reason,,,False,,a0R8Y00000qxo1lUAA,3,False,a0e8Y00000IZYo4QAH,False,picture
+a0R8Y00000qxo1qUAA,high_water_line,High water line,,,False,,a0R8Y00000qxo1eUAA,11,False,a0e8Y00000IZYo4QAH,False,picture
+a0R8Y00000qxo1rUAA,rejection_reason,Rejection Reason,,,False,,a0R8Y00000qxo1lUAA,1,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxo1sUAA,rejection_image_1,Image depicting rejection reason,,,False,,a0R8Y00000qxo1lUAA,2,False,a0e8Y00000IZYo4QAH,False,picture
+a0R8Y00000qxo1uUAA,general_site_information_accessibility,General Site Information & Accessibility,,,False,,,10,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxo1vUAA,q4wd_accessibility,4WD Accessibility,,,False,,a0R8Y00000qxo1uUAA,1,False,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo1wUAA,a0R8Y00000qxo1w,Region,,,False,,a0R8Y00000qxo1EUAQ,1,True,a0e8Y00000IZYo4QAH,False,cascading-level
+a0R8Y00000qxo1xUAA,a0R8Y00000qxo1x,Country,,,False,,a0R8Y00000qxo1EUAQ,2,True,a0e8Y00000IZYo4QAH,False,cascading-level
+a0R8Y00000qxo1yUAA,a0R8Y00000qxo1y,Level 1 Government,,,False,,a0R8Y00000qxo1EUAQ,3,True,a0e8Y00000IZYo4QAH,False,cascading-level
+a0R8Y00000qxo1zUAA,a0R8Y00000qxo1z,Level 2 Government,,,False,,a0R8Y00000qxo1EUAQ,4,True,a0e8Y00000IZYo4QAH,False,cascading-level
+a0R8Y00000qxo20UAA,cell_service_quality,Cell service quality,,,False,,a0R8Y00000qxoNXUAY,1,False,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo21UAA,materials_delivery_access_picklist,Materials delivery access,,,False,,a0R8Y00000qxoNXUAY,3,False,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo9pUAA,nearest_large_quantity_supplier,Nearest town to buy construction materials,,,False,,a0R8Y00000qxo1uUAA,2,False,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxo9qUAA,cell_service_carriers,Cell service carriers,,,False,,a0R8Y00000qxoNXUAY,2,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxo9rUAA,materials_delivery_access,Materials delivery access notes,,,False,,a0R8Y00000qxoNXUAY,4,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxo9sUAA,local_material_availability,Local material availability,,,False,,a0R8Y00000qxoNXUAY,5,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxo9tUAA,notes_on_site,Notes on site accessibility,,,False,,a0R8Y00000qxoNXUAY,6,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxo9uUAA,materials_delivery_point,Left side materials delivery point,,,False,,a0R8Y00000qxoNXUAY,7,False,a0e8Y00000IZYo4QAH,False,gps-location
+a0R8Y00000qxo9vUAA,right_side_materials_delivery_point,Right side materials delivery point,,,False,,a0R8Y00000qxoNXUAY,8,False,a0e8Y00000IZYo4QAH,False,gps-location
+a0R8Y00000qxo9wUAA,name_of_community_served_1,Name of Community Served 1,,,False,,a0R8Y00000qxoNYUAY,2,True,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxo9xUAA,individuals_served_by_community_1,Individuals Served by Community 1,,,True,,a0R8Y00000qxoNYUAY,3,False,a0e8Y00000IZYo4QAH,False,number-integer
+a0R8Y00000qxo9yUAA,name_of_community_served_2,Name of Community Served 2,,,False,,a0R8Y00000qxoNYUAY,4,False,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxo9zUAA,individuals_served_by_community_2,Individuals Served by Community 2,,,False,,a0R8Y00000qxoNYUAY,5,False,a0e8Y00000IZYo4QAH,False,number-integer
+a0R8Y00000qxoA0UAI,name_of_community_served_3,Name of Community Served 3,,,False,,a0R8Y00000qxoNYUAY,6,False,a0e8Y00000IZYo4QAH,False,number-integer
+a0R8Y00000qxoA1UAI,individuals_served_by_community_3,Individuals Served by Community 3,,,False,,a0R8Y00000qxoNYUAY,7,False,a0e8Y00000IZYo4QAH,False,number-integer
+a0R8Y00000qxoA2UAI,name_of_community_served_4,Name of Community Served 4,,,False,,a0R8Y00000qxoNYUAY,8,False,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxoA5UAI,individuals_served_by_community_5,Individuals Served by Community 5,,,False,,a0R8Y00000qxoNYUAY,11,False,a0e8Y00000IZYo4QAH,False,number-integer
+a0R8Y00000qxo22UAA,months_in_which_volunteers_may_be_scarce,Months in which volunteers may be scarce,,,False,,a0R8Y00000qxoNaUAI,3,False,a0e8Y00000IZYo4QAH,False,checkbox
+a0R8Y00000qxo23UAA,do_you_want_to_add_key_stakeholder_conta,Do you want to add Key Stakeholder Contacts?,,,False,,a0R8Y00000qxoNeUAI,1,True,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo24UAA,enter_gps_manually_or_using_device,Enter Proposed bridge location (GPS) manually or using device?,,,False,,a0R8Y00000qxoNgUAI,1,True,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo25UAA,q360,360° from right side tower,,,False,,a0R8Y00000qxoNiUAI,1,False,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxo26UAA,q360_from_left_side_tower,360° from left side tower,,,False,,a0R8Y00000qxoNiUAI,2,False,a0e8Y00000IZYo4QAH,False,radio
+a0R8Y00000qxoA3UAI,individuals_served_by_community_4,Individuals Served by Community 4,,,False,,a0R8Y00000qxoNYUAY,9,False,a0e8Y00000IZYo4QAH,False,number-integer
+a0R8Y00000qxoA4UAI,name_of_community_served_5,Name of Community Served 5,,,False,,a0R8Y00000qxoNYUAY,10,False,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxoA6UAI,name_of_community_served_6,Name of Community Served 6,,,False,,a0R8Y00000qxoNYUAY,12,False,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxoA7UAI,individuals_served_by_community_6,Individuals Served by Community 6,,,False,,a0R8Y00000qxoNYUAY,13,False,a0e8Y00000IZYo4QAH,False,number-integer
+a0R8Y00000qxoA8UAI,name_of_community_served_7,Name of Community Served 7,,,False,,a0R8Y00000qxoNYUAY,14,False,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxoA9UAI,individuals_served_by_community_7,Individuals Served by Community 7,,,False,,a0R8Y00000qxoNYUAY,15,False,a0e8Y00000IZYo4QAH,False,number-integer
+a0R8Y00000qxoAAUAY,name_of_community_served_8,Name of Community Served 8,,,False,,a0R8Y00000qxoNYUAY,16,False,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxoABUAY,individuals_served_by_community_8,Individuals Served by Community 8,,,False,,a0R8Y00000qxoNYUAY,17,False,a0e8Y00000IZYo4QAH,False,number-integer
+a0R8Y00000qxoAFUAY,individuals_served_by_community_10,Individuals Served by Community 10,,,False,,a0R8Y00000qxoNYUAY,21,False,a0e8Y00000IZYo4QAH,False,number-integer
+a0R8Y00000qxoACUAY,name_of_community_served_9,Name of Community Served 9,,,False,,a0R8Y00000qxoNYUAY,18,False,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxoADUAY,individuals_served_by_community_9,Individuals Served by Community 9,,,False,,a0R8Y00000qxoNYUAY,19,False,a0e8Y00000IZYo4QAH,False,number-integer
+a0R8Y00000qxoAEUAY,name_of_community_served_10,Name of Community Served 10,,,False,,a0R8Y00000qxoNYUAY,20,False,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxoAGUAY,primary_occupations,Primary occupations,,,False,,a0R8Y00000qxoNaUAI,1,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxoAHUAY,primary_agricultural_products,Primary agricultural products,,,False,,a0R8Y00000qxoNaUAI,2,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxoAIUAY,key_destinations_blocked_by_river,"Market, farm, or work access blocked by river",,,False,,a0R8Y00000qxoNbUAI,1,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxoAJUAY,education_access_blocked_by_river,Education access blocked by river,,,False,,a0R8Y00000qxoNbUAI,2,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxoAKUAY,health_access_blocked_by_river,Health access blocked by river,,,False,,a0R8Y00000qxoNbUAI,3,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxoALUAY,other_access_blocked_by_river,Other access blocked by river,,,False,,a0R8Y00000qxoNbUAI,4,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxoAMUAY,days_per_year_river_is_difficult_or_impo,Days per year river is difficult or impossible to cross,,,False,,a0R8Y00000qxoNcUAI,1,False,a0e8Y00000IZYo4QAH,False,number-integer
+a0R8Y00000qxoANUAY,flood_duration_during_rainy_season,Flood duration during rainy season,,,False,,a0R8Y00000qxoNcUAI,2,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxoAOUAY,river_crossing_injuries_in_last_3_years,River crossing injuries in last 3 years,,,False,,a0R8Y00000qxoNcUAI,3,False,a0e8Y00000IZYo4QAH,False,number-integer
+a0R8Y00000qxoAPUAY,river_crossing_deaths_in_last_3_years,River crossing deaths in last 3 years,,,False,,a0R8Y00000qxoNcUAI,4,False,a0e8Y00000IZYo4QAH,False,number-integer
+a0R8Y00000qxoAQUAY,incident_descriptions,Incident descriptions,,,False,,a0R8Y00000qxoNcUAI,5,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxoARUAY,land_ownership_information_for_proposed_,Land ownership information for proposed bridge site,,,False,,a0R8Y00000qxoNdUAI,1,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxoASUAY,other_infrastructure_projects_in_plannin,Other infrastructure projects in planning,,,False,,a0R8Y00000qxoNdUAI,2,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxoATUAY,current_crossing_method_1,Current crossing method,,,False,,a0R8Y00000qxoNdUAI,3,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxoAUUAY,nearest_allweather_crossing_point,Nearest all-weather crossing point,,,False,,a0R8Y00000qxoNdUAI,4,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxoAVUAY,notes_on_social_information,Notes on social information,,,False,,a0R8Y00000qxoNdUAI,5,False,a0e8Y00000IZYo4QAH,False,text-long
+a0R8Y00000qxoAWUAY,photo_of_meeting_attendance_sheet,Photo of meeting attendance sheet,,,False,,a0R8Y00000qxoNdUAI,6,False,a0e8Y00000IZYo4QAH,False,picture
+a0R8Y00000qxoAXUAY,proposed_bridge_location_gps,Proposed bridge location (GPS),,,False,,a0R8Y00000qxoNgUAI,4,False,a0e8Y00000IZYo4QAH,False,gps-location
+a0R8Y00000qxoAYUAY,river_name,River name,,,False,,a0R8Y00000qxoNgUAI,5,False,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxoAZUAY,contact_first_name,Contact First Name,,,False,,a0R8Y00000qxoNfUAI,1,False,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxoAaUAI,contact_last_name,Contact Last Name,,,False,,a0R8Y00000qxoNfUAI,2,True,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxoAbUAI,contact_mobile_phone_number,Contact Mobile Phone Number,,,False,,a0R8Y00000qxoNfUAI,3,False,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxoAcUAI,contact_email,Contact Email,,,False,,a0R8Y00000qxoNfUAI,4,False,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxoAdUAI,contact_typetitle,Contact Type/Title,,,False,,a0R8Y00000qxoNfUAI,5,False,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxoNXUAY,general_site_information_accessibility_2,General Site Information & Accessibility 2,,,False,,,11,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxoNYUAY,social_information_individuals_directly_,Social Information - Individuals Directly Served,,,False,,,12,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxoNZUAY,criteria_for_individuals_directly_served,Criteria for individuals directly served,,,False,"Count the entire population of the village or community if the identified crossing/proposed bridge site is the only route from the village or community to any of the following:
+- Primary school
+- Secondary school
+- Clinic, health center, or hospital
+- Market that is attended by members of the village at least weekly for some part of the year (if it’s a weekly market that only occurs seasonally, still count it)
+- Significant local employer or labor opportunities (examples include commercial farms or plantations, agricultural processing centers, or wage-labor opportunities in construction, brick-making, tree-cutting, transportation, or domestic work)
+- Road or transportation connection point to nearest urban area",a0R8Y00000qxoNYUAY,1,False,a0e8Y00000IZYo4QAH,False,static-content
+a0R8Y00000qxoNaUAI,social_information,Social Information,,,False,,,13,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxoNbUAI,social_information_3,Social Information 3,,,False,,,14,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxoNcUAI,social_information_4,Social Information 4,,,False,,,15,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxoNdUAI,social_information_5,Social Information 5,,,False,,,16,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxoNeUAI,key_stakeholder_contacts_to_enter,Key Stakeholder Contacts to Enter?,,,False,,,17,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxoNfUAI,key_stakeholder_contacts,Key Stakeholder Contacts,,,False,,,18,False,a0e8Y00000IZYo4QAH,False,repeat
+a0R8Y00000qxoNgUAI,river_name_location,River Name & Location,,,False,,,19,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxoNhUAI,proposed_bridge_location_gps_latitude_1,Proposed bridge location (GPS) Latitude,,,False,,a0R8Y00000qxoNgUAI,2,False,a0e8Y00000IZYo4QAH,False,text-short
+a0R8Y00000qxoNiUAI,videos_on_box,Videos on Box,,,False,,,20,False,a0e8Y00000IZYo4QAH,False,section
+a0R8Y00000qxoNjUAI,proposed_bridge_location_gps_longitude_1,Proposed bridge location (GPS) Longitude,,,False,,a0R8Y00000qxoNgUAI,3,False,a0e8Y00000IZYo4QAH,False,text-short
