@@ -4,11 +4,7 @@ import os
 
 # Define the fields to keep (hardcoded)
 FIELDS_TO_KEEP = [
-    "FormVersions.Name",
-    "FormVersions.CreatedDate",
-    "FormVersions.gfsurveys__Status__c",
     "Questions.gfsurveys__Caption__c",
-    "Questions.CreatedDate",
     "Questions.gfsurveys__DynamicOperationType__c",
     "Questions.gfsurveys__DynamicOperation__c",
     "Questions.gfsurveys__Hidden__c",
@@ -22,9 +18,7 @@ FIELDS_TO_KEEP = [
     "Questions.gfsurveys__Required__c",
     "Questions.gfsurveys__SurveyVersion__c",
     "Questions.gfsurveys__Type__c",
-    "Options.Caption__c",
-    "Options.Position__c",
-    "Options.Question__c"
+    "Questions.Name"
 ]
 
 def extract_nested_fields(obj, fields_to_keep):
