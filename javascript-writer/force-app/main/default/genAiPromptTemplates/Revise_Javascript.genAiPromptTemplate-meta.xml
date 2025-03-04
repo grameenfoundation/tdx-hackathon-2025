@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
-    <activeVersionIdentifier>5fKS9YlzYIYo8w+K5fyr5HvTKP9ZZdZicWXO66twZAA=_1</activeVersionIdentifier>
     <developerName>Revise_Javascript</developerName>
     <masterLabel>Revise Javascript</masterLabel>
     <templateVersions>

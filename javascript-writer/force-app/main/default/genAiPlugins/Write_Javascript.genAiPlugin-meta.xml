@@ -25,9 +25,6 @@
         <functionName>QuestionTag_Helper</functionName>
     </genAiFunctions>
     <genAiFunctions>
-        <functionName>Explain_Javascript</functionName>
-    </genAiFunctions>
-    <genAiFunctions>
         <functionName>Generate_Javascript_Specific_Question</functionName>
     </genAiFunctions>
     <genAiFunctions>
@@ -38,6 +35,12 @@
     </genAiFunctions>
     <genAiFunctions>
         <functionName>SaveJS_Helper</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Explain_Generic_Javascript</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Revise_Generic_Javascript</functionName>
     </genAiFunctions>
     <genAiPluginInstructions>
         <description>Always output valid javascript syntax, with explanation in javascript code</description>

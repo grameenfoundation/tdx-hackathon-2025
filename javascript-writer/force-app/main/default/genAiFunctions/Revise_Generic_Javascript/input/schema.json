@@ -1,0 +1,28 @@
+{
+  "required" : [ "Input:Current_Javascript", "Input:User_Feedback" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:Current_Javascript" : {
+      "title" : "Current Javascript",
+      "description" : "Current Javascript Code",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Input:User_Feedback" : {
+      "title" : "User Feedback",
+      "description" : "The feedback for this javascript",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "citationMode" : {
+      "title" : "Citation Mode",
+      "description" : "Select Citation Mode",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

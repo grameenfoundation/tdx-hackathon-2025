@@ -1,14 +1,11 @@
 {
-  "required" : [ "Input:Question" ],
+  "required" : [ "Input:Javascript" ],
   "unevaluatedProperties" : false,
   "properties" : {
-    "Input:Question" : {
-      "title" : "Question",
-      "description" : "Contains the Question ID to use when fetching the relevant Javascript",
-      "lightning:type" : "lightning__recordInfoType",
-      "lightning:sObjectInfo" : {
-        "apiName" : "Question__c"
-      },
+    "Input:Javascript" : {
+      "title" : "Javascript",
+      "description" : "This should be javascript text",
+      "lightning:type" : "lightning__textType",
       "lightning:isPII" : false,
       "copilotAction:isUserInput" : false
     },

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Explain Javascript for a specific question</description>
-    <invocationTarget>Explain_Javascript</invocationTarget>
+    <description>Explain Javascript</description>
+    <invocationTarget>Explain_Generic_Javascript</invocationTarget>
     <invocationTargetType>generatePromptResponse</invocationTargetType>
     <isConfirmationRequired>false</isConfirmationRequired>
     <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
-    <masterLabel>Explain Javascript In this Question</masterLabel>
-    <progressIndicatorMessage>Analyzing Javascript in this question</progressIndicatorMessage>
+    <masterLabel>Explain Generic Javascript</masterLabel>
+    <progressIndicatorMessage>Analyzing Javascript</progressIndicatorMessage>
 </GenAiFunction>
