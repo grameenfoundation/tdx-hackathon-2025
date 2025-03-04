@@ -1,0 +1,40 @@
+<template>
+    <lightning-card
+      title="Suggest Javascript"
+      icon-name="utility:socialshare"
+    >
+      <div class="slds-var-p-around_small">
+        <template lwc:if={error}>
+          {error}
+          <lightning-button
+            onclick={suggestJavascript}
+            label="Try again!"
+            class="slds-align_absolute-center"
+          >
+          </lightning-button>
+        </template>
+        <template lwc:else>
+          <lightning-button
+            onclick={suggestJavascript}
+            label="Suggest Javascript"
+          >
+          </lightning-button>
+          <div class="slds-var-p-top_small">
+            <lightning-textarea
+              name="generatedJS"
+              readonly
+              value={generatedJS}
+              label="Generated JS"
+            >
+            </lightning-textarea>
+          </div>
+        </template>
+        <template lwc:if={showSpinner}>
+          <lightning-spinner
+            alternative-text="Loading..."
+            size="small"
+          ></lightning-spinner>
+        </template>
+      </div>
+    </lightning-card>
+  </template>
