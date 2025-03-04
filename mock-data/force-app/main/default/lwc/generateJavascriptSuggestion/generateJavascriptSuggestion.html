@@ -21,10 +21,10 @@
           </lightning-button>
           <div class="slds-var-p-top_small">
             <lightning-textarea
-              name="generatedJS"
-              readonly
-              value={generatedJS}
-              label="Generated JS"
+              name="currentJS"
+              value={currentJS}
+              label="Current JS"
+              onchange={handleChange}
             >
             </lightning-textarea>
           </div>
@@ -36,5 +36,6 @@
           ></lightning-spinner>
         </template>
       </div>
+      <lightning-button label="Update" onclick={handleClick}></lightning-button>
     </lightning-card>
   </template>
