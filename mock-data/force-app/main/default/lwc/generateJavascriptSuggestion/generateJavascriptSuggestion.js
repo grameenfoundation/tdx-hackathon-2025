@@ -1,6 +1,6 @@
-import { api, LightningElement } from "lwc";
+import { api, LightningElement, wire } from "lwc";
 import SuggestJavascript from "@salesforce/apex/GenerateJavascriptSuggestion.SuggestJavascript";
-import { updateRecord } from "lightning/uiRecordApi";
+import { updateRecord, getRecord, getFieldValue } from "lightning/uiRecordApi";
 import { generateRecordInputForUpdate } from 'lightning/uiRecordApi';
 
 
@@ -13,6 +13,12 @@ export default class GenerateJavascriptSuggestion extends LightningElement {
   error;
   showSpinner = false;
   @api recordId;
+
+  @wire(getRecord, { recordId: '$recordId', layoutTypes: 'Full' }) question;
+
+  get initialJS() {
+    return getFieldValue(this.question.data, JS_FIELD);
+  }
 
   async suggestJavascript() {
     this.showSpinner = true;
