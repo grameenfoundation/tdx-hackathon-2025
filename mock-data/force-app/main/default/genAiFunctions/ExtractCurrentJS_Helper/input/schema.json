@@ -1,0 +1,14 @@
+{
+  "required" : [ "questionID" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "questionID" : {
+      "title" : "questionID",
+      "description" : "Question ID to retrieve related question tags",
+      "lightning:type" : "lightning__recordIdType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,14 +1,11 @@
 {
-  "required" : [ "Input:Question" ],
+  "required" : [ "Input:JS_to_preview" ],
   "unevaluatedProperties" : false,
   "properties" : {
-    "Input:Question" : {
-      "title" : "Question",
-      "description" : "Contains the 18-digit Question ID to use when fetching the relevant Javascript",
-      "lightning:type" : "lightning__recordInfoType",
-      "lightning:sObjectInfo" : {
-        "apiName" : "Question__c"
-      },
+    "Input:JS_to_preview" : {
+      "title" : "JS_to_preview",
+      "description" : "Javascript code to preview and validate",
+      "lightning:type" : "lightning__textType",
       "lightning:isPII" : false,
       "copilotAction:isUserInput" : false
     },

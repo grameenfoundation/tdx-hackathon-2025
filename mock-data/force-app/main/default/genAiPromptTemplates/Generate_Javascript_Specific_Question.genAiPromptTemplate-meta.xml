@@ -301,7 +301,7 @@ only using the versions from the Valid Question Tag Array (printed exactly)
             <referenceName>Input:Question</referenceName>
             <required>true</required>
         </inputs>
-        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <primaryModel>Lower_Temp_CM_12l_WU7ca935d7f</primaryModel>
         <status>Draft</status>
         <templateDataProviders>
             <definition>apex://PromptInvokableQuestionTag</definition>

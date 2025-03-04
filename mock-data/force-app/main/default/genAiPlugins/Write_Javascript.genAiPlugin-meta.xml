@@ -19,7 +19,7 @@
         <utterance>What does this javascript do?</utterance>
     </aiPluginUtterances>
     <canEscalate>false</canEscalate>
-    <description>Write javascript, write dynamic operations, write code or provide help with dynamic operations</description>
+    <description>Write javascript, help write javascript</description>
     <developerName>Write_Javascript</developerName>
     <genAiFunctions>
         <functionName>QuestionTag_Helper</functionName>
@@ -29,6 +29,15 @@
     </genAiFunctions>
     <genAiFunctions>
         <functionName>Generate_Javascript_Specific_Question</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__ExtractFieldsAndValuesFromUserInput</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>ExtractCurrentJS_Helper</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>SaveJS_Helper</functionName>
     </genAiFunctions>
     <genAiPluginInstructions>
         <description>Always output valid javascript syntax, with explanation in javascript code</description>
@@ -45,5 +54,5 @@
     <language>en_US</language>
     <masterLabel>Write Javascript</masterLabel>
     <pluginType>Topic</pluginType>
-    <scope>Your job is to write javascript code and provide context on what the code does</scope>
+    <scope>Your job is to fetch existing JS code from the DynamicOperations Field, explain javascript, help suggest better Javascript, revise existing Javascript and save the Javascript</scope>
 </GenAiPlugin>

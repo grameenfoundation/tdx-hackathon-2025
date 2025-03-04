@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Save Javascript for a single question. Only save the javascript if the user explicitly asks to &quot;Save&quot; something, this should be done carefully.</description>
+    <invocationTarget>SaveJS</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>SaveJS Helper</masterLabel>
+    <progressIndicatorMessage>Saving Javascript</progressIndicatorMessage>
+</GenAiFunction>

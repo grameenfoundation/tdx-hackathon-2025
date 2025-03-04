@@ -3,7 +3,7 @@
   "properties" : {
     "promptResponse" : {
       "title" : "Prompt Response",
-      "description" : "The explanation for what the javascript code does",
+      "description" : "The new JS code",
       "lightning:type" : "lightning__textType",
       "lightning:isPII" : false,
       "copilotAction:isDisplayable" : true,

@@ -1,0 +1,21 @@
+{
+  "required" : [ "newJS", "questionID" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "newJS" : {
+      "title" : "newJS",
+      "description" : "valid javascript text, usually multi-line with comments",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "questionID" : {
+      "title" : "questionID",
+      "description" : "Question ID to retrieve related question tags",
+      "lightning:type" : "lightning__recordIdType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

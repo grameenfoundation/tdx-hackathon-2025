@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>5fKS9YlzYIYo8w+K5fyr5HvTKP9ZZdZicWXO66twZAA=_2</activeVersionIdentifier>
+    <description>Preview a Change of the Javascript</description>
+    <developerName>Preview_JS_Change</developerName>
+    <masterLabel>Preview JS Change</masterLabel>
+    <templateVersions>
+        <content>If the following text is valid javascript, repeat the text back exactly. Write the response in valid javascript syntax - do not include markdown or ``` marks. If the JS is invalid, add a comment explaining why it&apos;s invalid. 
+
+Javascript code to validate:
+```
+{!$Input:JS_to_preview}
+```
+</content>
+        <inputs>
+            <apiName>JS_to_preview</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>JS_to_preview</masterLabel>
+            <referenceName>Input:JS_to_preview</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Draft</status>
+        <versionIdentifier>5fKS9YlzYIYo8w+K5fyr5HvTKP9ZZdZicWXO66twZAA=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>If the following text is valid javascript, repeat the text back exactly. Write the response in valid javascript syntax - do not include markdown or ``` marks. If the JS is invalid, add a comment explaining why it&apos;s invalid. 
+
+Javascript code to validate:
+```
+{!$Input:JS_to_preview}
+```
+</content>
+        <inputs>
+            <apiName>JS_to_preview</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>JS_to_preview</masterLabel>
+            <referenceName>Input:JS_to_preview</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>5fKS9YlzYIYo8w+K5fyr5HvTKP9ZZdZicWXO66twZAA=_2</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

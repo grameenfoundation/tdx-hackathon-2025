@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Explain Javascript for a specific question</description>
-    <invocationTarget>Explain_Javascript</invocationTarget>
+    <description>Preview javascript without saving it</description>
+    <invocationTarget>Preview_JS_Change</invocationTarget>
     <invocationTargetType>generatePromptResponse</invocationTargetType>
     <isConfirmationRequired>false</isConfirmationRequired>
     <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
-    <masterLabel>Explain Javascript</masterLabel>
-    <progressIndicatorMessage>Reticulating Splines</progressIndicatorMessage>
+    <masterLabel>Preview JS Change</masterLabel>
+    <progressIndicatorMessage>Verifying Javascript</progressIndicatorMessage>
 </GenAiFunction>

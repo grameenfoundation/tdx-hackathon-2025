@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
-    <activeVersionIdentifier>5fKS9YlzYIYo8w+K5fyr5HvTKP9ZZdZicWXO66twZAA=_1</activeVersionIdentifier>
+    <activeVersionIdentifier>5fKS9YlzYIYo8w+K5fyr5HvTKP9ZZdZicWXO66twZAA=_2</activeVersionIdentifier>
     <description>Explain Javascript in plaintext</description>
     <developerName>Explain_Javascript</developerName>
     <masterLabel>Explain Javascript</masterLabel>
@@ -28,6 +28,31 @@ The Javascript to explain is as follows:
         <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
         <status>Published</status>
         <versionIdentifier>5fKS9YlzYIYo8w+K5fyr5HvTKP9ZZdZicWXO66twZAA=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Explain the following Javascript in readable text for a non-technical person. Note that Question Tags will show up like:
+
+tw.community_info.village_name.value
+
+Where &quot;community_info&quot; is the name of the Section and &quot;village_name&quot; is the name of the Question.
+
+If there is no Javascript in the next section (between ``` and ```), write &quot;no Javascript specified&quot;
+
+The Javascript to explain is as follows:
+```
+{!$Input:Question.DynamicOperation__c}
+```
+</content>
+        <inputs>
+            <apiName>Question</apiName>
+            <definition>SOBJECT://Question__c</definition>
+            <masterLabel>Question</masterLabel>
+            <referenceName>Input:Question</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>5fKS9YlzYIYo8w+K5fyr5HvTKP9ZZdZicWXO66twZAA=_2</versionIdentifier>
     </templateVersions>
     <type>einstein_gpt__flex</type>
     <visibility>Global</visibility>
